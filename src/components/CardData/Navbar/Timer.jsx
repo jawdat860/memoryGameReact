@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import Context from "../../dataContext/Context";
+import Context from "../../../dataContext/Context";
 
 const Timer = (props) => {
   const [time, setTime] = useState(0);
@@ -20,9 +20,9 @@ const Timer = (props) => {
   useEffect(() => {
     if (!ctx.startTimer && ctx.winPlay) {
       props.getTime(formatTime(time));
-      console.log(time)
+      
     }
-  }, [ctx.startTimer, ctx.winPlay]);
+  }, [ctx.startTimer, ctx.winPlay, time, props]);
 
   useEffect(() => {
     if (!ctx.winPlay && !ctx.startTimer) {

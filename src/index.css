@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.front{
+    @apply absolute top-0 left-0   [transform:rotateY(90deg)] transition-all ease-in duration-200
+}
+.flipped .front{
+    @apply  transition-transform  [transform:rotateY(0deg)] delay-200
+}
+.back{
+    @apply transition-all ease-in delay-200
+}
+.flipped .back {
+    @apply  [transform:rotateY(90deg)] delay-0
+}

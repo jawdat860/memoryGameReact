@@ -1,6 +1,3 @@
-
-
-
 const cardImages = [
     { src:"/memoryGameReact/image/1.jpg"  , matched: true},
     {   src: "/memoryGameReact/image/2.jpg" ,matched: true},

@@ -2,7 +2,6 @@ import { createContext } from "react";
 
 const Context = createContext({
   cards: [],
-
   choiceOne: null,
   choiceTwo: null,
   disabled: false,

@@ -13,7 +13,6 @@ const initialState = {
   winPlay: false,
   newGameButton: false,
 };
-
 const reducer = (state, action) => {
   switch (action.type) {
     case "SET_CARDS":
@@ -42,7 +41,6 @@ const reducer = (state, action) => {
       return state;
   }
 };
-
 const Provider = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -67,7 +65,6 @@ const Provider = (props) => {
     });
     setTimeout(() => dispatch({ type: "SET_TIMER", payload: true }), 2000);
   };
-
   const newGame = () => {
     dispatch({ type: "SET_WIN", payload: 0 });
     dispatch({ type: "GAME_BUTTON", payload: true });
@@ -76,7 +73,6 @@ const Provider = (props) => {
     setTimeout(() => dispatch({ type: "GAME_BUTTON", payload: false }), 2500);
     shuffleCards();
   };
-
   const handleChoice = (card) => {
     dispatch({
       type: state.choiceOne ? "SET_CHOICES" : "SET_CHOICES",
@@ -85,7 +81,6 @@ const Provider = (props) => {
         : { choiceOne: card, choiceTwo: null },
     });
   };
-
   const comp = () => {
     if (state.finalResult === win) {
       dispatch({ type: "SET_FINSH_GAME", payload: true });
@@ -118,7 +113,6 @@ const Provider = (props) => {
       }, 1000);
     }
   };
-
   const context = {
     ...state,
     shuffleCards,
@@ -126,7 +120,6 @@ const Provider = (props) => {
     handleChoice,
     comp,
   };
-
   return <Context.Provider value={context}>{props.children}</Context.Provider>;
 };
 

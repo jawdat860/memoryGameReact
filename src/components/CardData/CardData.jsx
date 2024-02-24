@@ -2,9 +2,9 @@ import { useContext, useEffect, useState } from "react";
 
 import Context from "../../dataContext/Context";
 
-import SingleCard from "../Card/SingleCard";
-import Navbar from "../Navbar/Navbar";
-import Popup from "../Popup/Popup";
+import SingleCard from "./SingleCard";
+import Navbar from "./Navbar/Navbar";
+import Popup from "./Popup";
 
 function CardData({ namePlayer }) {
   const ctx = useContext(Context);

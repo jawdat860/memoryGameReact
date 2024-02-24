@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Login from "./components/Login/Login";
 import CardData from "./components/CardData/CardData";
-import Popup from "./components/Popup/Popup";
+
 
 function App() {
   const [namePlayer, setNamePlayer] = useState("");
