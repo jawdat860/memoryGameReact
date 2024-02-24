@@ -4,17 +4,17 @@ import Timer from "../Timer/Timer";
 
 function Navbar(props) {
   const ctx = useContext(Context);
-
   function getTime(time) {
     props.getTime(time);
   }
 
   return (
-    <nav className="bg-gray-800 text-white w-full py-3 px-4 flex flex-col sm:flex-row justify-between items-center gap-5 sm:h-[50px]">
+    <nav className="bg-gray-800 text-white w-full py-3 px-4 flex flex-col sm:flex-row justify-between items-center gap-5 sm:h-[50px] ]">
       <h3 className="text-lg font-semibold">Memory Game</h3>
-      <p className="text-lg hidden md:block  ">Player Name: {props.namePlayer}</p>
+      <p className="text-lg hidden md:block  ">
+        Player Name: {props.namePlayer}
+      </p>
       <p className="text-lg hidden md:block ">Wrong: {ctx.worngTry}</p>
-
       <div className="flex items-center  sm:mt-0">
         <Timer getTime={getTime} />
       </div>

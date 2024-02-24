@@ -19,7 +19,7 @@ function CardData({ namePlayer }) {
   function getTime(v){
     setTime(v)
   }
-  console.log(time)
+  
   return (
     <>
       <Popup namePlayer={namePlayer}  time={time} />

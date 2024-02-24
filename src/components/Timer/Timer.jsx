@@ -20,8 +20,9 @@ const Timer = (props) => {
   useEffect(() => {
     if (!ctx.startTimer && ctx.winPlay) {
       props.getTime(formatTime(time));
+      console.log(time)
     }
-  }, [ctx.startTimer, ctx.winPlay, time, props]);
+  }, [ctx.startTimer, ctx.winPlay]);
 
   useEffect(() => {
     if (!ctx.winPlay && !ctx.startTimer) {

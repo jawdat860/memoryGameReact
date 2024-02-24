@@ -1,5 +1,4 @@
-
-
+import cover from "/image/cover.jpg"
 import style from "./SingleCard.module.css";
 
 export default function SingleCard({
@@ -15,13 +14,15 @@ export default function SingleCard({
       handleChoice(card);
     }
   };
+ 
   return (
     <div className=" relative cursor-pointer sm:w-[200px] sm:h-[140px] ">
+     
       <div className={cardFlipped ? style.flipped : ""}>
         <img className={`${style.front}  w-[200px] h-[138px] block border-2 border-white rounded-md`} src={card.src} alt="Card front" />
         <img
           className={`${style.back}  w-[200px] h-[138px]  block border-2 border-white rounded-md`}
-          src="/img/cover.jpg"
+          src={cover}
           onClick={handleClick}
           alt="Card back"
         />

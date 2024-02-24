@@ -89,6 +89,7 @@ const Provider = (props) => {
   const comp = () => {
     if (state.finalResult === win) {
       dispatch({ type: "SET_FINSH_GAME", payload: true });
+      dispatch({ type: "SET_TIMER", payload: false });
     }
     if (
       state.choiceOne &&

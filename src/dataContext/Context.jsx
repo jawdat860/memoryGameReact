@@ -10,7 +10,6 @@ const Context = createContext({
   handleChoice: (card) => {},
   comp: () => {},
    newGame : () => {},
-
   worngTry: 0,
   finalResult : 0,
   startTimer: false,
