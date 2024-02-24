@@ -18,7 +18,7 @@ function PopupUi(props) {
           <h1 className="text-2xl font-bold mb-4">
             {props.namePlayer} you win
           </h1>
-          <p className="text-lg">the try: {props.worngTry}</p>
+          <p className="text-lg">the trys: {props.worngTry}</p>
           <p className="text-lg">the time: {props.time}</p>
           <div className="mt-4">
             <button

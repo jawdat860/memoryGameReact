@@ -1,3 +1,13 @@
+import React from "react";
+
+/**
+ * Form component for user login.
+ * @param {Object} props - Component props.
+ * @param {Function} props.submitHandler - Function to handle form submission.
+ * @param {string} props.player - Value of the input field (player name).
+ * @param {Function} props.nameHandler - Function to handle changes in the input field.
+ * @returns {JSX.Element} - Rendered FormLogin component.
+ */
 const FormLogin = (props) => {
   return (
     <form
@@ -23,4 +33,5 @@ const FormLogin = (props) => {
     </form>
   );
 };
+
 export default FormLogin;

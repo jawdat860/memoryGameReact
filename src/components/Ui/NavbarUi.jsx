@@ -1,12 +1,27 @@
+import React from "react";
+
+/**
+ * UI component for the navbar of the memory game.
+ * @param {Object} props - Component props.
+ * @param {string} props.namePlayer - The name of the player.
+ * @param {number} props.worngTry - The number of wrong attempts made by the player.
+ * @param {Function} props.newGame - Function to start a new game.
+ * @param {boolean} props.newGameButton - Indicates whether the new game button is disabled.
+ * @returns {JSX.Element} - Rendered NavbarUi component.
+ */
 function NavbarUi(props) {
   return (
     <>
+      {/* Title of the game */}
       <h3 className="text-lg font-semibold">Memory Game</h3>
-      <p className="text-lg hidden md:block  ">
-        Player Name: {props.namePlayer}
-      </p>
-      <p className="text-lg hidden md:block ">Wrong: {props.worngTry}</p>
+      
+      {/* Display player name (hidden on smaller screens) */}
+      <p className="text-lg hidden md:block">Player Name: {props.namePlayer}</p>
+      
+      {/* Display the number of wrong attempts (hidden on smaller screens) */}
+      <p className="text-lg hidden md:block">Wrong: {props.worngTry}</p>
 
+      {/* Button to start a new game */}
       <button
         onClick={props.newGame}
         disabled={props.newGameButton}
@@ -17,4 +32,5 @@ function NavbarUi(props) {
     </>
   );
 }
+
 export default NavbarUi;
