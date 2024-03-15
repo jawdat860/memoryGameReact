@@ -12,4 +12,5 @@
 
  <p>this page for game</p>
  
- ![Screen Shot 2024-03-15 at 19 59 37](https://github.com/jawdat860/memoryGameReact/assets/83513860/90aa7f03-adbb-4166-8948-c1a1736c1b63)
+ 
+![Screen Shot 2024-03-15 at 20 00 46](https://github.com/jawdat860/memoryGameReact/assets/83513860/bf3b565e-e8ec-46db-8114-4cd7be14e28f)
