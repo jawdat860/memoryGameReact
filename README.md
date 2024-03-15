@@ -1,8 +1,15 @@
-# React + Vite
+<h1>Memory Game </h1>
+<h1>Description</h1>
+<p>it is a game in which the user turns over two cards , if they are identical, he wins and it containues until all pictures match </p>
+<h1>Technologies used</h1>
+<io>
+  <li>React</li>
+  <li>Tailwind CSS</li>
+ <h1>How to use the application</h1>
+ <p>the main Page ,it is username registration page</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screen Shot 2024-03-15 at 19 59 37](https://github.com/jawdat860/memoryGameReact/assets/83513860/90aa7f03-adbb-4166-8948-c1a1736c1b63)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ <p>this page for game</p>
+ 
+ ![Screen Shot 2024-03-15 at 19 59 37](https://github.com/jawdat860/memoryGameReact/assets/83513860/90aa7f03-adbb-4166-8948-c1a1736c1b63)
