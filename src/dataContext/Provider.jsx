@@ -123,7 +123,7 @@ const Provider = (props) => {
   const handleChoice = (card) => {
     // Set the choiceOne and choiceTwo based on the current state
     dispatch({
-      type: state.choiceOne ? "SET_CHOICES" : "SET_CHOICES",
+      type:"SET_CHOICES",
       payload: state.choiceOne
         ? { choiceOne: state.choiceOne, choiceTwo: card }
         : { choiceOne: card, choiceTwo: null },
